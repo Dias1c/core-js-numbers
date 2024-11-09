@@ -297,14 +297,12 @@ function getSumToN(n) {
  */
 function getSumOfDigits(num) {
   let n = Math.trunc(num);
-  console.log('num', num);
   let result = 0;
   while (n > 0) {
     const t = n % 10;
     n = (n - t) / 10;
     result += t;
   }
-  console.log('num result', result);
   return result;
 }
 
